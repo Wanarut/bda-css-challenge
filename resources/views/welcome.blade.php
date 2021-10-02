@@ -58,6 +58,7 @@
             </div>
         </div>
     </div>
+
     <div class="banner" id="banner">
         <div class="row h-80 justify-content-center">
             <div class="align-self-center">
@@ -65,8 +66,8 @@
                     <a class="col banner-text text-right" style="color: #FFCC00;">
                         BDA Cloud
                     </a>
-                    <div class="col-1 vl ml-2 mr-3">
-    
+                    <div class="col-1 vline ml-2 mr-3">
+
                     </div>
                 </div>
             </div>
@@ -76,6 +77,118 @@
             </div>
         </div>
         <a class="row text-white justify-content-center">เริ่มต้นใช้งานฟรี! 1 เดือนแรก</a>
+    </div>
+
+    <div class="row m-3 justify-content-center" id="plan">
+        <div class="m-2 card plan">
+            <div class="card-body">
+                <h5 class="text-center text-bold">นักพัฒนาระบบ</h5>
+                <img class="center" src={{ asset('images/Icon_1.png') }}>
+                <a class="center text-14 text-secondary">คุณกำลังเริ่มต้นสิ่งใหม่ๆ อยู่ใช่ไหม ?</a>
+                <div class="center">
+                    <button class="btn btn-blue">เริ่มกันเลย !</button>
+                </div>
+            </div>
+        </div>
+        <div class="m-2 card plan">
+            <div class="card-body">
+                <h5 class="text-center text-bold">ธุรกิจสตาร์ทอัพ</h5>
+                <img class="center" src={{ asset('images/Icon_2.png') }}>
+                <a class="center text-14 text-secondary">หากคุณกำลังมองหาสิ่งที่คุ้มค่าและตอบโจทย์กับธุรกิจของคุณ</a>
+                <div class="center">
+                    <button class="btn btn-green">สัมผัสประสบการณ์ใหม่</button>
+                </div>
+            </div>
+        </div>
+        <div class="m-2 card plan">
+            <div class="card-body">
+                <h5 class="text-center text-bold">องค์กรขนาดใหญ่</h5>
+                <img class="center" src={{ asset('images/Icon_3.png') }}>
+                <a class="center text-14 text-secondary">คุณกำลังเริ่มต้นสิ่งใหม่ๆ อยู่ใช่ไหม ?</a>
+                <div class="center">
+                    <button class="btn btn-purple">เพิ่มประสิทธิภาพสูงสุด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row m-3 justify-content-center" id="package">
+        <div class="card package-zone">
+            <div class="card-body">
+                <h5 class="text-center text-bold">เลือกแพ็คเกจที่เหมาะกับคุณ</h5>
+                <a class="center text-14 text-secondary">แพ็คเกจของเราเริ่มต้นที่ 639 บาท/เดือนเท่านั้น</a>
+                <div class="row">
+                    <div class="col m-3 package-blue">
+                        <div class="card-body">
+                            <a>นักพัฒนาระบบ</a>
+                            <p>
+                                <span class="text-bold" style="font-size:30px;">639&nbsp;</span>
+                                <span style="font-size:20px;">บาท/เดือน</span>
+                            </p>
+                            <a>2 ผู้ใช้งาน</a>
+                            <div class="hline" style="border: 1px solid #299DF5;">
+                            </div>
+                            <p class="text-14"><span class="text-blue">10&nbsp;</span><span>โปรเจ็ค</span>
+                            </p>
+                            <p class="text-14"><span class="text-blue">3&nbsp;</span><span>ลูกค้า</span></p>
+                            <p class="text-14"><span
+                                    class="text-blue">ไม่จำกัด&nbsp;</span><span>จำนวนข้อความ</span></p>
+                        </div>
+                    </div>
+                    <div class="col m-3 package-blue">
+                        <div class="card-body">
+                            <a>นักพัฒนาระบบ</a>
+                            <p>
+                                <span class="text-bold" style="font-size:30px;">639&nbsp;</span>
+                                <span style="font-size:20px;">บาท/เดือน</span>
+                            </p>
+                            <a>2 ผู้ใช้งาน</a>
+                            <div class="hline" style="border: 1px solid #299DF5;">
+                            </div>
+                            <p class="text-14"><span class="text-blue">10&nbsp;</span><span>โปรเจ็ค</span>
+                            </p>
+                            <p class="text-14"><span class="text-blue">3&nbsp;</span><span>ลูกค้า</span></p>
+                            <p class="text-14"><span
+                                    class="text-blue">ไม่จำกัด&nbsp;</span><span>จำนวนข้อความ</span></p>
+                        </div>
+                    </div>
+                    <div class="col m-3 package-blue">
+                        <div class="card-body">
+                            <a>นักพัฒนาระบบ</a>
+                            <p>
+                                <span class="text-bold" style="font-size:30px;">639&nbsp;</span>
+                                <span style="font-size:20px;">บาท/เดือน</span>
+                            </p>
+                            <a>2 ผู้ใช้งาน</a>
+                            <div class="hline" style="border: 1px solid #299DF5;">
+                            </div>
+                            <p class="text-14"><span class="text-blue">10&nbsp;</span><span>โปรเจ็ค</span>
+                            </p>
+                            <p class="text-14"><span class="text-blue">3&nbsp;</span><span>ลูกค้า</span></p>
+                            <p class="text-14"><span
+                                    class="text-blue">ไม่จำกัด&nbsp;</span><span>จำนวนข้อความ</span></p>
+                        </div>
+                    </div>
+                    <div class="col m-3 package-blue">
+                        <div class="card-body">
+                            <a>นักพัฒนาระบบ</a>
+                            <p>
+                                <span class="text-bold" style="font-size:30px;">639&nbsp;</span>
+                                <span style="font-size:20px;">บาท/เดือน</span>
+                            </p>
+                            <a>2 ผู้ใช้งาน</a>
+                            <div class="hline" style="border: 1px solid #299DF5;">
+                            </div>
+                            <p class="text-14"><span class="text-blue">10&nbsp;</span><span>โปรเจ็ค</span>
+                            </p>
+                            <p class="text-14"><span class="text-blue">3&nbsp;</span><span>ลูกค้า</span></p>
+                            <p class="text-14"><span
+                                    class="text-blue">ไม่จำกัด&nbsp;</span><span>จำนวนข้อความ</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

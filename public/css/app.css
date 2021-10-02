@@ -7,35 +7,130 @@
 }
 
 .nav-tab {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 72px;
     background: #FFFFFF;
     box-shadow: 0px -1px 0px #E6EAEE;
+    z-index: 1000;
 }
 
 .banner {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     height: 416px;
     top: 72px;
-    background-image: url("/images/nasa-space-hd.jpg");
+    /* background-image: url("/images/nasa-space-hd.jpg"); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5))
+    , url("/images/nasa-space-hd.jpg");
     background-size: cover;
-    background-position: 0% 20%;
+    background-position: center 20%;
 }
 
 .banner-text {
-    font-style: normal;
     font-weight: bold;
     font-size: 62px;
     margin-top: 20px;
 }
 
-.vl {
+.vline {
     border-left: 2px solid white;
     height: 136px;
-  }
+}
+
+.hline {
+    border: 1px solid black;
+    width: 100%;
+    margin: 16px 0px;
+}
 
 .h-80 {
     height: 80%;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+}
+
+.text-14 {
+    font-size: 14px;
+}
+
+.btn-blue {
+    width: 160px;
+    height: 39px;
+    font-size: 14px !important;
+    color: white !important;
+    background-color: #299DF5 !important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 4px !important;
+}
+
+.btn-green {
+    width: 160px;
+    height: 39px;
+    font-size: 14px !important;
+    color: white !important;
+    background-color: #34AA44 !important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 4px !important;
+}
+
+.btn-purple {
+    width: 160px;
+    height: 39px;
+    font-size: 14px !important;
+    color: white !important;
+    background-color: #815DE6 !important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 4px !important;
+}
+
+.plan {
+    width: 27%;
+}
+
+.package-zone {
+    width: 83%;
+}
+
+.package-blue {
+    background: #FFFFFF;
+    border: 2px solid #299DF5;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.package-green {
+    background: #FFFFFF;
+    border: 2px solid #34AA44;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.package-gold {
+    background: linear-gradient(107.11deg, #FFCC00 1.54%, #FF9500 89.56%);
+    border: 2px solid #FFCC00;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.package-purple {
+    background: #FFFFFF;
+    border: 2px solid #815DE6;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.text-blue {
+    color: #299DF5;
 }
