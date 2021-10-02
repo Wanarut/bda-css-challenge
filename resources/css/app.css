@@ -15,12 +15,15 @@
     z-index: 1000;
 }
 
+.content {
+    position: absolute;
+    top: 72px;
+    width: 100%;
+}
+
 .banner {
-    /* position: absolute; */
     width: 100%;
     height: 416px;
-    top: 72px;
-    /* background-image: url("/images/nasa-space-hd.jpg"); */
     background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5))
     , url("/images/nasa-space-hd.jpg");
     background-size: cover;
@@ -61,8 +64,14 @@
     margin-top: 16px;
 }
 
+.text-12 {
+    font-size: 12px;
+    margin: 0px 0px;
+}
+
 .text-14 {
     font-size: 14px;
+    margin: 5px 0px;
 }
 
 .btn-blue {
@@ -133,4 +142,44 @@
 
 .text-blue {
     color: #299DF5;
+}
+
+.text-green {
+    color: #34AA44;
+}
+
+.text-gold {
+    color: #121212;
+}
+
+.text-purple {
+    color: #815DE6;
+}
+
+.text-brown {
+    color: #5A3325;
+}
+
+.text-gray {
+    color: #6C6C6C;
+}
+
+.text-upper {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0.8rem 0rem !important;
+}
+
+.btn-clean {
+    width: 77px !important;
+    height: 24px !important;
+    background: #F9F9F9 !important;
+    border: 1px solid #E1E1E1 !important;
+    border-radius: 3px !important;
+}
+
+.img-over {
+    position: absolute;
+    top: -16px;
+    right: 24px;
 }
