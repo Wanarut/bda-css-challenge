@@ -218,13 +218,13 @@
             </div>
         </div>
 
-        <div class="row m-3 justify-content-center" id="package">
+        <div class="row m-3 justify-content-center" id="table">
             <div class="card package-zone">
                 <table class="table">
                     <thead>
                         <tr>
                             <th scope="col">
-                                <h4 class="text-bold m-4">BDA Cloud Service</h4>
+                                <h4 class="text-bold table-name">BDA Cloud Service</h4>
                             </th>
                             <th scope="col">
                                 <div class="row m-0 mb-3">
