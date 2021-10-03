@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
 
     {{-- Main CSS --}}
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="{{ mix('css/app.css') }}">
     {{-- Bootstrap --}}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -73,7 +73,8 @@
                     </div>
                 </div>
                 <div class="align-self-center">
-                    <h4 class="row text-white justify-content-center">สัมผัสประสบการณ์ Cloud storage แบบใหม่ได้ที่นี่
+                    <h4 class="row text-white text-res justify-content-center">สัมผัสประสบการณ์ Cloud storage
+                        แบบใหม่ได้ที่นี่
                     </h4>
                     <a class="row text-white justify-content-center">คลิกเลย >></a>
                 </div>
@@ -83,134 +84,151 @@
             </p>
         </div>
 
-        <div class="row m-3 justify-content-center" id="plan">
-            <div class="m-2 card plan">
-                <div class="card-body">
-                    <h5 class="text-center text-bold text-gold">นักพัฒนาระบบ</h5>
-                    <img class="center" src={{ asset('images/Icon_1.png') }}>
-                    <a class="center text-14 text-gray">คุณกำลังเริ่มต้นสิ่งใหม่ๆ อยู่ใช่ไหม ?</a>
-                    <div class="center">
-                        <button class="btn btn-blue">เริ่มกันเลย !</button>
+        <div class="row justify-content-center" id="plan">
+            <div class="row package-zone">
+                <div class="mt-3 col-xl p-0 pr-xl-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="text-center text-bold text-gold">นักพัฒนาระบบ</h5>
+                            <img class="center" src={{ asset('images/Icon_1.png') }}>
+                            <a class="center text-14 text-gray">คุณกำลังเริ่มต้นสิ่งใหม่ๆ อยู่ใช่ไหม ?</a>
+                            <div class="center">
+                                <button class="btn btn-blue">เริ่มกันเลย !</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="m-2 card plan">
-                <div class="card-body">
-                    <h5 class="text-center text-bold text-gold">ธุรกิจสตาร์ทอัพ</h5>
-                    <img class="center" src={{ asset('images/Icon_2.png') }}>
-                    <a class="center text-14 text-gray">หากคุณกำลังมองหาสิ่งที่คุ้มค่าและตอบโจทย์กับธุรกิจของคุณ</a>
-                    <div class="center">
-                        <button class="btn btn-green">สัมผัสประสบการณ์ใหม่</button>
+                <div class="mt-3 col-xl p-0 pl-xl-1 pr-xl-1">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="text-center text-bold text-gold">ธุรกิจสตาร์ทอัพ</h5>
+                            <img class="center" src={{ asset('images/Icon_2.png') }}>
+                            <a
+                                class="center text-14 text-gray">หากคุณกำลังมองหาสิ่งที่คุ้มค่าและตอบโจทย์กับธุรกิจของคุณ</a>
+                            <div class="center">
+                                <button class="btn btn-green">สัมผัสประสบการณ์ใหม่</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="m-2 card plan">
-                <div class="card-body">
-                    <h5 class="text-center text-bold text-gold">องค์กรขนาดใหญ่</h5>
-                    <img class="center" src={{ asset('images/Icon_3.png') }}>
-                    <a class="center text-14 text-gray">คุณกำลังเริ่มต้นสิ่งใหม่ๆ อยู่ใช่ไหม ?</a>
-                    <div class="center">
-                        <button class="btn btn-purple">เพิ่มประสิทธิภาพสูงสุด</button>
+                <div class="mt-3 col-xl p-0 pl-xl-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="text-center text-bold text-gold">องค์กรขนาดใหญ่</h5>
+                            <img class="center" src={{ asset('images/Icon_3.png') }}>
+                            <a class="center text-14 text-gray">คุณกำลังเริ่มต้นสิ่งใหม่ๆ อยู่ใช่ไหม ?</a>
+                            <div class="center">
+                                <button class="btn btn-purple">เพิ่มประสิทธิภาพสูงสุด</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row m-3 justify-content-center" id="package">
+        <div class="row mt-3 justify-content-center" id="package">
             <div class="card package-zone">
                 <div class="card-body">
                     <h5 class="text-center text-bold">เลือกแพ็คเกจที่เหมาะกับคุณ</h5>
                     <a class="center text-gray">แพ็คเกจของเราเริ่มต้นที่ 639 บาท/เดือนเท่านั้น</a>
-                    <div class="row">
-                        <div class="col m-3 package-blue">
-                            <div class="card-body">
-                                <h5 class="text-gray text-bold">นักพัฒนาระบบ</h5>
-                                <img class="img-over" src={{ asset('images/Icon_4.png') }}>
-                                <p class="text-14">
-                                    <span class="text-bold" style="font-size:30px;">639&nbsp;</span>
-                                    <span style="font-size:20px;">บาท/เดือน</span>
-                                </p>
-                                <a class="text-14 text-gray">2 ผู้ใช้งาน</a>
-                                <div class="hline" style="border: 1px solid #299DF5;">
+                    <div class="row m-2 mt-5">
+                        <div class="col-xl-3 col-md-6 p-2">
+                            <div class="package-blue">
+                                <div class="card-body">
+                                    <h5 class="text-gray text-bold">นักพัฒนาระบบ</h5>
+                                    <img class="img-over" src={{ asset('images/Icon_4.png') }}>
+                                    <p class="text-14">
+                                        <span class="text-bold" style="font-size:30px;">639&nbsp;</span>
+                                        <span style="font-size:20px;">บาท/เดือน</span>
+                                    </p>
+                                    <a class="text-14 text-gray">2 ผู้ใช้งาน</a>
+                                    <div class="hline" style="border: 1px solid #299DF5;">
+                                    </div>
+                                    <p class="text-14">
+                                        <span class="text-blue">10&nbsp;</span><span>โปรเจ็ค</span>
+                                    </p>
+                                    <p class="text-14">
+                                        <span class="text-blue">3&nbsp;</span><span>ลูกค้า</span>
+                                    </p>
+                                    <p class="text-14">
+                                        <span class="text-blue">ไม่จำกัด&nbsp;</span><span>จำนวนข้อความ</span>
+                                    </p>
                                 </div>
-                                <p class="text-14">
-                                    <span class="text-blue">10&nbsp;</span><span>โปรเจ็ค</span>
-                                </p>
-                                <p class="text-14">
-                                    <span class="text-blue">3&nbsp;</span><span>ลูกค้า</span>
-                                </p>
-                                <p class="text-14">
-                                    <span class="text-blue">ไม่จำกัด&nbsp;</span><span>จำนวนข้อความ</span>
-                                </p>
                             </div>
                         </div>
-                        <div class="col m-3 package-green">
-                            <div class="card-body">
-                                <h5 class="text-gray text-bold">ธุรกิจสตาร์ทอัพ</h5>
-                                <img class="img-over" src={{ asset('images/Icon_4.png') }}>
-                                <p class="text-14">
-                                    <span class="text-bold" style="font-size:30px;">969&nbsp;</span>
-                                    <span style="font-size:20px;">บาท/เดือน</span>
-                                </p>
-                                <a class="text-14 text-gray">6 ผู้ใช้งาน</a>
-                                <div class="hline" style="border: 1px solid #34AA44;">
+                        <div class="col-xl-3 col-md-6 p-2">
+                            <div class="package-green">
+                                <div class="card-body">
+                                    <h5 class="text-gray text-bold">ธุรกิจสตาร์ทอัพ</h5>
+                                    <img class="img-over" src={{ asset('images/Icon_5.png') }}>
+                                    <p class="text-14">
+                                        <span class="text-bold" style="font-size:30px;">969&nbsp;</span>
+                                        <span style="font-size:20px;">บาท/เดือน</span>
+                                    </p>
+                                    <a class="text-14 text-gray">6 ผู้ใช้งาน</a>
+                                    <div class="hline" style="border: 1px solid #34AA44;">
+                                    </div>
+                                    <p class="text-14">
+                                        <span class="text-green">100&nbsp;</span><span>โปรเจ็ค</span>
+                                    </p>
+                                    <p class="text-14">
+                                        <span class="text-green">300&nbsp;</span><span>ลูกค้า</span>
+                                    </p>
+                                    <p class="text-14">
+                                        <span class="text-green">ไม่จำกัด&nbsp;</span><span>จำนวนข้อความ</span>
+                                    </p>
                                 </div>
-                                <p class="text-14">
-                                    <span class="text-green">100&nbsp;</span><span>โปรเจ็ค</span>
-                                </p>
-                                <p class="text-14">
-                                    <span class="text-green">300&nbsp;</span><span>ลูกค้า</span>
-                                </p>
-                                <p class="text-14">
-                                    <span class="text-green">ไม่จำกัด&nbsp;</span><span>จำนวนข้อความ</span>
-                                </p>
                             </div>
                         </div>
-                        <div class="col m-3 package-gold">
-                            <div class="card-body">
-                                <h5 class="text-brown text-bold">เพิ่มประสิทธิภาพ</h5>
-                                <img class="img-over" src={{ asset('images/Icon_4.png') }}>
-                                <p class="text-14">
-                                    <span class="text-bold" style="font-size:30px;">1,899&nbsp;</span>
-                                    <span class="text-brown" style="font-size:20px;">บาท/เดือน</span>
-                                </p>
-                                <a class="text-14 text-brown">15 ผู้ใช้งาน</a>
-                                <div class="hline" style="border: 1px solid #5A3325;">
+                        <div class="col-xl-3 col-md-6 p-2">
+                            <div class="package-gold">
+                                <div class="card-body">
+                                    <h5 class="text-brown text-bold">เพิ่มประสิทธิภาพ</h5>
+                                    <img class="img-over" src={{ asset('images/Icon_6.png') }}>
+                                    <p class="text-14">
+                                        <span class="text-bold" style="font-size:30px;">1,899&nbsp;</span>
+                                        <span class="text-brown" style="font-size:20px;">บาท/เดือน</span>
+                                    </p>
+                                    <a class="text-14 text-brown">15 ผู้ใช้งาน</a>
+                                    <div class="hline" style="border: 1px solid #5A3325;">
+                                    </div>
+                                    <p class="text-14">
+                                        <span class="text-gold">ไม่จำกัด&nbsp;</span><span
+                                            class="text-brown">จำนวนโปรเจ็ค</span>
+                                    </p>
+                                    <p class="text-14">
+                                        <span class="text-gold">ไม่จำกัด&nbsp;</span><span
+                                            class="text-brown">จำนวนลูกค้า</span>
+                                    </p>
+                                    <p class="text-14">
+                                        <span class="text-gold">ไม่จำกัด&nbsp;</span><span
+                                            class="text-brown">จำนวนข้อความ</span>
+                                    </p>
                                 </div>
-                                <p class="text-14">
-                                    <span class="text-gold">ไม่จำกัด&nbsp;</span><span
-                                        class="text-brown">จำนวนโปรเจ็ค</span>
-                                </p>
-                                <p class="text-14">
-                                    <span class="text-gold">ไม่จำกัด&nbsp;</span><span
-                                        class="text-brown">จำนวนลูกค้า</span>
-                                </p>
-                                <p class="text-14">
-                                    <span class="text-gold">ไม่จำกัด&nbsp;</span><span
-                                        class="text-brown">จำนวนข้อความ</span>
-                                </p>
                             </div>
                         </div>
-                        <div class="col m-3 package-purple">
-                            <div class="card-body">
-                                <h5 class="text-gray text-bold">องค์กรขนาดใหญ่</h5>
-                                <img class="img-over" src={{ asset('images/Icon_4.png') }}>
-                                <p class="text-14">
-                                    <span class="text-bold" style="font-size:30px;">8,559&nbsp;</span>
-                                    <span style="font-size:20px;">บาท/เดือน</span>
-                                </p>
-                                <a class="text-14 text-gray">100 ผู้ใช้งาน</a>
-                                <div class="hline" style="border: 1px solid #815DE6;">
+                        <div class="col-xl-3 col-md-6 p-2">
+                            <div class="package-purple">
+                                <div class="card-body">
+                                    <h5 class="text-gray text-bold">องค์กรขนาดใหญ่</h5>
+                                    <img class="img-over" src={{ asset('images/Icon_7.png') }}>
+                                    <p class="text-14">
+                                        <span class="text-bold" style="font-size:30px;">8,559&nbsp;</span>
+                                        <span style="font-size:20px;">บาท/เดือน</span>
+                                    </p>
+                                    <a class="text-14 text-gray">100 ผู้ใช้งาน</a>
+                                    <div class="hline" style="border: 1px solid #815DE6;">
+                                    </div>
+                                    <p class="text-14">
+                                        <span class="text-purple">ไม่จำกัด&nbsp;</span><span>จำนวนโปรเจ็ค</span>
+                                    </p>
+                                    <p class="text-14">
+                                        <span class="text-purple">ไม่จำกัด&nbsp;</span><span>จำนวนลูกค้า</span>
+                                    </p>
+                                    <p class="text-14">
+                                        <span class="text-purple">ไม่จำกัด&nbsp;</span><span>จำนวนข้อความ</span>
+                                    </p>
                                 </div>
-                                <p class="text-14">
-                                    <span class="text-purple">ไม่จำกัด&nbsp;</span><span>จำนวนโปรเจ็ค</span>
-                                </p>
-                                <p class="text-14">
-                                    <span class="text-purple">ไม่จำกัด&nbsp;</span><span>จำนวนลูกค้า</span>
-                                </p>
-                                <p class="text-14">
-                                    <span class="text-purple">ไม่จำกัด&nbsp;</span><span>จำนวนข้อความ</span>
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -218,7 +236,7 @@
             </div>
         </div>
 
-        <div class="row m-3 justify-content-center" id="table">
+        <div class="row mt-3 justify-content-center" id="table">
             <div class="card package-zone">
                 <table class="table">
                     <thead>
@@ -441,6 +459,58 @@
 
                     </tbody>
                 </table>
+            </div>
+        </div>
+
+        <div class="row mt-3 justify-content-center" id="partner">
+            <div class="card package-zone">
+                <div class="card-body">
+                    <h5 class="text-center text-bold">ลูกค้าที่ไว้วางใจให้เราดูแล</h5>
+                    <div class="row justify-content-center">
+                        <img class="col-2" src={{ asset('images/THAI_POST.png') }}>
+                        <img class="col-2" src={{ asset('images/PPS.png') }}>
+                        <img class="col-2" src={{ asset('images/NSP.png') }}>
+                        <img class="col-2" src={{ asset('images/STEP.png') }}>
+                        <img class="col-2" src={{ asset('images/CMU.png') }}>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3 justify-content-center" id="contact">
+            <div class="card package-zone">
+                <div class="card-body mt-2 ml-5 mr-5">
+                    <h5 class="text-bold">ติดต่อเรา</h5>
+                    <div class="row">
+                        <div class="col mr-5">
+                            <div class="row form-group">
+                                <label class="col-3 col-form-label">ชื่อ-นามสกุล</label>
+                                <input type="text" class="col form-control" required>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-3 col-form-label">อีเมล</label>
+                                <input type="text" class="col form-control" required>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-3 col-form-label">เบอร์โทรศัพท์</label>
+                                <input type="text" class="col form-control" required>
+                            </div>
+                        </div>
+                        <div class="col border-row">
+                            <div class="row form-group">
+                                <label class="col-3 col-form-label">หัวข้อ</label>
+                                <select class="col form-control"></select>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-3 col-form-label">รายละเอียด</label>
+                                <textarea class="col form-control" rows="3" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-end">
+                        <button class="btn btn-violet">ส่ง<i class="ml-3 fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
