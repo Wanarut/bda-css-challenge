@@ -482,7 +482,7 @@
                 <div class="card-body mt-2 ml-5 mr-5">
                     <h5 class="text-bold">ติดต่อเรา</h5>
                     <div class="row">
-                        <div class="col mr-5">
+                        <div class="col-xl mr-xl-5">
                             <div class="row form-group">
                                 <label class="col-3 col-form-label">ชื่อ-นามสกุล</label>
                                 <input type="text" class="col form-control" required>
@@ -496,10 +496,14 @@
                                 <input type="text" class="col form-control" required>
                             </div>
                         </div>
-                        <div class="col border-row">
+                        <div class="col-xl border-row">
                             <div class="row form-group">
                                 <label class="col-3 col-form-label">หัวข้อ</label>
-                                <select class="col form-control"></select>
+                                <select class="col form-control">
+                                    <option value="แนะนำ" selected>แนะนำ</option>
+                                    <option value="ติชม">ติชม</option>
+                                    <option value="แจ้งปัญหา">แจ้งปัญหา</option>
+                                </select>
                             </div>
                             <div class="row form-group">
                                 <label class="col-3 col-form-label">รายละเอียด</label>
